@@ -9,7 +9,7 @@
 <div class="col-sm-6 purple">
 	<div class="quote-well">
 	 	<h2>“The individual has within him or herself vast resources for self-understanding.”</h2>
-	 	<p>Big Dick Dudley</p>
+	 	<p>Donny Darko</p>
  	</div>
 </div>
 <?php get_footer(); ?>
