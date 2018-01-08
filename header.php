@@ -9,7 +9,7 @@
 	<title>
 	<?php bloginfo('name'); ?></title>
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway|UnifrakturMaguntia" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
 
@@ -19,14 +19,14 @@
 </head>
 <body <?php body_class(); ?> >
 
-<?php 
+<!-- <?php 
 global $post;
 $direct_parent = $post->post_parent;
 echo $direct_parent;
 echo $post->ID;
 
 
-?>
+?> -->
 
 		<nav id="navbar" class="navbar navbar-default">
 	  <div class="container-fluid">
@@ -38,7 +38,10 @@ echo $post->ID;
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
+        <div class="text-center">
 	      <a class="navbar-brand" href="<?php echo home_url(); if ($direct_parent == 6 || $post->ID == 6){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
+        <div>Se Habla Español</div>
+        </div>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +50,7 @@ echo $post->ID;
         <?php if ($direct_parent == 4 || $post->ID == 4){
           echo "Traducir la pàgina";
         } else {
-          echo "Translate the page";
+          echo "Translate page";
         }
         ?>
         </span></a>
@@ -68,7 +71,6 @@ echo $post->ID;
 	  </div><!-- /.container-fluid -->
 	</nav>
 	
-<div id="main">
-	<div class="main-container container">
-    <div class="row">
+<div id="main" class="container-fluid">
+  <div class="row is-table-row">
     
