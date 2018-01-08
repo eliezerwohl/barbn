@@ -160,6 +160,13 @@ h1.title a:hover {
 	margin-bottom: 5px !important;
 }
 
+.navbar .translate {
+	position: absolute;
+	right: 30px;
+	z-index: 6;
+	background-color: lightgreen;
+}
+
 /*Home*/
 
 .article-container {

@@ -38,39 +38,36 @@ echo $post->ID;
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand visible-xs" href="<?php echo home_url(); ?>">The Millennial Mom Times</a>
+	      <a class="navbar-brand" href="<?php echo home_url(); if ($direct_parent == 6 || $post->ID == 6){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     <?php
-     if ($direct_parent == 4 || $post->ID == 4){
+        <a href="<?php the_field("translate-page"); ?>"><span class="translate">
+        <?php if ($direct_parent == 4 || $post->ID == 4){
+          echo "Traducir la pàgina";
+        } else {
+          echo "Translate the page";
+        }
+        ?>
+        </span></a>
+        <?php if ($direct_parent == 4 || $post->ID == 4){
+          $menu = "eng";
+        } else { $menu = "esp"; }
             wp_nav_menu( array(
-                'menu'              => 'eng',
+
+                'menu'              => $menu,
                 'theme_location'    => 'primary',
                 'depth'             => 2,
-                'menu_class'        => 'mobile-fix nav nav-justified',
+                'menu_class'        => ' nav navbar-nav  navbar-right',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker())
             );
-          }
-          else { 
-  
-            wp_nav_menu( array(
-                'menu'              => 'esp',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'menu_class'        => 'mobile-fix nav nav-justified',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker())
-            );
-          }
         ?> 
-	    
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	<h1 class="title hidden-xs invisible-xs"><a  href="<?php echo home_url(); ?>">The Millennial Mom Times</a></h1>
+	
 <div id="main">
 	<div class="main-container container">
     <div class="row">
