@@ -51,31 +51,19 @@ echo $post->ID;
         }
         ?>
         </span></a>
+        <?php if ($direct_parent == 4 || $post->ID == 4){
+          $menu = "eng";
+        } else { $menu = "esp"; }
+            wp_nav_menu( array(
 
-     <?php
-     if ($direct_parent == 4 || $post->ID == 4){
-            wp_nav_menu( array(
-                'menu'              => 'eng',
+                'menu'              => $menu,
                 'theme_location'    => 'primary',
                 'depth'             => 2,
                 'menu_class'        => ' nav navbar-nav  navbar-right',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker())
             );
-          }
-          else { 
-  
-            wp_nav_menu( array(
-                'menu'              => 'esp',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'menu_class'        => ' nav navbar-nav  navbar-right',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker())
-            );
-          }
         ?> 
-	    
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
