@@ -200,7 +200,13 @@ h1.title a:hover {
 
 /*Home*/
 
+.letter-lg {
+ font-size: 40px;
+}
 
+.letter-md {
+	font-size: 24px;
+}
 @media (min-width: 767px) {
 .page-template-home .quote-well {
 /*	width: fit-content;

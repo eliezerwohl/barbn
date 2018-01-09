@@ -21,11 +21,11 @@
 <div class="container">
   <div class='row'>
     <div class="col-md-12">
-      <p>DO YOU FEEL that no one in the world really “gets” you? Are you confused about the direction
+      <p><span class="letter-lg">D</span><span class="letter-md">O YOU FEEL</span> that no one in the world really “gets” you? Are you confused about the direction
         your life is taking? Or worried about the direction of your child’s life? 
       </p>
-      <p>I INVITE YOU to come and talk with me in a safe nonjudgmental environment where the “real you” can grow and flourish.</p>
-      <p>TOGETHER WE can work to understand and resolve challenges and difficulties in your (or your chld’s) life so that it will be one worthy of celebrating.</p>
+      <p><span class="letter-lg">I</span> <span class="letter-md">INVITE YOU</span> to come and talk with me in a safe nonjudgmental environment where the “real you” can grow and flourish.</p>
+      <p><span class="letter-lg">T</span><span class="letter-md">OGETHER WE</span> can work to understand and resolve challenges and difficulties in your (or your chld’s) life so that it will be one worthy of celebrating.</p>
     </div>
     <div class="text-center col-md-12">
       <div class="long-line"></div>
