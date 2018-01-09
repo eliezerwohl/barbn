@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, p {
 
 h2 {
 	text-align: center;
+	margin-bottom: 50px;
+}
+p {
+	margin-bottom: 20px;
 }
 
 .long-line {
@@ -36,6 +40,7 @@ h2 {
   width: 80%;
   background-color: #e8ebf7;
   display: inline-block;
+  margin:25px 0px;
 }
 
 .short-line {
@@ -43,6 +48,7 @@ h2 {
   width: 40%;
   background-color: #e8ebf7;
   display: inline-block;
+  margin:50px 0px 25px;
 }
 
 #main .purple {
@@ -69,10 +75,23 @@ h2 {
 .btn:active:focus,
 .btn.active:focus,
 .btn.focus,
+.btn-default:active,
 .btn:active.focus,
-.btn.active.focus {
+.btn.active.focus,
+.btn-default:hover {
   outline: none;
   outline-offset: none;
+  background-color: #e8ebf7;
+	color: #2a0d45;
+	border-color: #2a0d45;
+}
+
+.btn-default {
+	min-width: 80px;
+	margin:0px 20px;
+	background-color: #2a0d45;
+	color: #e8ebf7;
+	border-color: #e8ebf7;
 }
 
 
@@ -183,15 +202,21 @@ h1.title a:hover {
 
 .letter-lg {
  font-size: 40px;
+ font-weight: bold;
 }
 
 .letter-md {
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .page-template-home .main {
-	margin-top: 25px;
-	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.page-template-home .main p {
+	margin-bottom: 20px
 }
 
 
@@ -201,19 +226,32 @@ h1.title a:hover {
 
 
 .page-template-home .sections a {
+	font-size: 24px;
 	padding: 5px 20px;
 	color:#2a0d45;
 }
 
 .page-template-home #about-me {
 	background-color: #e8ebf7;
+	padding: 50px 0px;
+}
+
+.page-template-home #about-me .read-more {
+	font-style: italic;
 }
 
 .page-template-home #about-me h2 {
 	text-align: center;
 }
 
+.page-template-home .quote-well h2 {
+	margin-bottom: 10px;
+}
 
+.page-template-home .warning {
+	font-weight: bold;
+	text-align: center;
+}
 @media (min-width: 767px) {
 .page-template-home .quote-well {
 /*	width: fit-content;
@@ -284,6 +322,10 @@ h1.title a:hover {
 }
 
 
+.page-template-home  #contact-div .btn-holder {
+	text-align: center;
+}
+
 /*single*/
 
 .single label{
@@ -332,17 +374,28 @@ h1.title a:hover {
 /*Category */
 
 footer {
-	border-top: 1px solid #23527c;
-	padding: 15px;
+	padding: 20px 15px;
+	color: #273676;
+	background-color: #e8ebf7;
+}
+
+footer a {
+	color: #273676 !important;
+}
+
+footer .contact {
+	margin-bottom: 10px;
 }
 
 footer .contact-me {
-	color: black;
+	padding:10px 10px;
 }	
 footer .contact-me:hover {
 	color: #23527c;
 }	
 
-footer div {
-	margin-bottom: 10px;
+footer .divider{ 
+	padding: 0px 10px;
 }
+
+
