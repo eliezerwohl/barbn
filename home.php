@@ -10,11 +10,11 @@
         <?php } ?>
       </div>
       <div class="col-sm-6 col-xs-12 purple">
-        <div class="qoute-outer">
+
           <div class="quote-well">
             <h2><?php the_field("quote"); ?></h2>
             <h4><?php the_field("author"); ?></h4>
-          </div>
+     
         </div>
       </div>
     </div>

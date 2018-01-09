@@ -252,7 +252,12 @@ h1.title a:hover {
 	font-weight: bold;
 	text-align: center;
 }
+
 @media (min-width: 767px) {
+.page-template-home .container {
+	padding-left:50px;
+	padding-right:50px;
+}
 .page-template-home .quote-well {
 /*	width: fit-content;
     width: -moz-max-content;
@@ -264,11 +269,12 @@ h1.title a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    min-width: 400px;
 /*	margin:80px 20px;*/
 		}
 	.page-template-home .img-well img {
 		width: 100%;
-		min-height: 600px;
+		min-height: 720px;
 	  object-fit: cover;
 	  height: 100%;
 	}
