@@ -12,34 +12,44 @@ html, body {
 }
 
 a {
-	color: #386a8b;
+	color: #2a0d45;
 }
 a:hover {
 	color: black;
-	text-decoration: none;
+/*	text-decoration: none;*/
 }
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Lato', sans-serif;
+	color: #474747;
 }
 h1, h2, h3, h4, h5, p {
 	margin-top: 0px;
 }
 
+h2 {
+	text-align: center;
+}
+
 .long-line {
-	height: 3px;
+	height: 4px;
   width: 80%;
   background-color: #e8ebf7;
   display: inline-block;
 }
 
 .short-line {
-	height: 3px;
+	height: 2px;
   width: 40%;
   background-color: #e8ebf7;
+  display: inline-block;
 }
 
 #main .purple {
 	background-color: #2a0d45;
+}
+
+#main .purple h2, #main .purple h4 {
 	color:#e8ebf7;
 }
 
@@ -84,35 +94,6 @@ input:focus , textarea:focus {
 	height: initial;
 	margin-left: 0px !important;
 	color:#3d3d3d;
-}
-
-.line {
-	text-transform: uppercase;
- overflow: hidden;
- text-align: center;
-}
-.line:before,
-.line:after {
- background-color: #386a8b;
- content: "";
- display: inline-block;
- height: 1px;
- position: relative;
- vertical-align: middle;
- width: 50%;
-}
-.line:before {
- right: 0.5em;
- margin-left: -50%;
-}
-.line:after {
- left: 0.5em;
- margin-right: -50%;
-}
-
-
-.article-container h2 {
-	/*text-transform: uppercase;*/
 }
 
 
@@ -207,6 +188,32 @@ h1.title a:hover {
 .letter-md {
 	font-size: 24px;
 }
+
+.page-template-home .main {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+
+.page-template-home .sections {
+	text-align: center;
+}
+
+
+.page-template-home .sections a {
+	padding: 5px 20px;
+	color:#2a0d45;
+}
+
+.page-template-home #about-me {
+	background-color: #e8ebf7;
+}
+
+.page-template-home #about-me h2 {
+	text-align: center;
+}
+
+
 @media (min-width: 767px) {
 .page-template-home .quote-well {
 /*	width: fit-content;
@@ -222,11 +229,12 @@ h1.title a:hover {
 /*	margin:80px 20px;*/
 		}
 	.page-template-home .img-well img {
-	width: 100%;
-	min-height: 600px;
-  object-fit: cover;
+		width: 100%;
+		min-height: 600px;
+	  object-fit: cover;
+	  height: 100%;
 	}
-	#main .container-fluid, .page-template-home .col-sm-6 {
+	.quote-container .container-fluid, .page-template-home .col-sm-6 {
 		padding-right: 0px;
 	  padding-left: 0px
 	}
@@ -253,6 +261,10 @@ h1.title a:hover {
 	}
 	.page-template-home .img-well img {
 		max-width: 100%;
+	}
+	.page-template-home #about-me {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
