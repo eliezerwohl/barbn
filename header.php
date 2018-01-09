@@ -34,9 +34,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <div class="text-center">
+          <div class="brand-holder text-center">
             <a class="navbar-brand" href="<?php echo home_url(); if ($direct_parent == 6 || $post->ID == 6){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
-            <div>Se Habla Español</div>
+            <div class="se">Se Habla Español</div>
           </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
