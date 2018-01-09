@@ -2,13 +2,13 @@
 <?php get_header(); ?>
 <div class="container-fluid">
   <div class="row is-table-row">
-    <div class="col-sm-6 img-well">
+    <div class="col-sm-6 col-xs-12 img-well">
       <?php $image = get_field('img'); ?>
       <?php if($image){ ?>
       <img  src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>"> 
       <?php } ?>
     </div>
-    <div class="col-sm-6 purple">
+    <div class="col-sm-6 col-xs-12 purple">
       <div class="qoute-outer">
         <div class="quote-well">
           <h2><?php the_field("quote"); ?></h2>
