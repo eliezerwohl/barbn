@@ -7,7 +7,7 @@ Version: 1.0
 */
 
 html, body {
-	color: black;
+	color: #2a0d45;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,6 +23,19 @@ h1, h2, h3, h4, h5 {
 }
 h1, h2, h3, h4, h5, p {
 	margin-top: 0px;
+}
+
+.long-line {
+	height: 3px;
+  width: 70%;
+  background-color: #e8ebf7;
+  display: inline-block;
+}
+
+.short-line {
+	height: 3px;
+  width: 60%;
+  background-color: #e8ebf7;
 }
 
 #main .purple {
@@ -96,9 +109,7 @@ input:focus , textarea:focus {
  left: 0.5em;
  margin-right: -50%;
 }
-.col-md-9 {
-	padding-right: 25px;
-}
+
 
 .article-container h2 {
 	/*text-transform: uppercase;*/
@@ -134,7 +145,7 @@ h1.title a:hover {
 }
 
 #navbar a {
-	color: black;
+	color: #474747;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
@@ -143,7 +154,7 @@ h1.title a:hover {
 }
 
 #navbar li a {
-	font-size: 12px;
+	font-size: 14px;
 	margin: 25px 0px;
 }
 @media(max-width: 767px){
@@ -177,22 +188,47 @@ h1.title a:hover {
 
 /*Home*/
 
-.home .img-well img {
+.page-template-home .img-well img {
 	
-	min-height: calc(100vh - 131px);
+/*	min-height: calc(100vh - 131px);*/
 	width: 100%;
+
+    min-height: 600px;
+    object-fit: cover;
 }
 
-.home .quote-well {
+.page-template-home .quote-well {
+/*	width: fit-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;*/
+   /* display: table;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 /*	margin:80px 20px;*/
-	height: 100%;
-	width: 100%;
+
+
+}
+
+#main, .page-template-home .col-sm-6 {
+	padding-right: 0px;
+    padding-left: 0px
+
+}
+
+.qoute-outer {
 
 }
 
 @media only screen and (min-width : 768px) {
     .is-table-row {
         display: table;
+        width: 100%;
+          margin-left:0px;
+    margin-right: 0px;
     }
     .is-table-row [class*="col-"] {
         float: none;
@@ -202,11 +238,13 @@ h1.title a:hover {
     }
 }
 
-.home .quote-well h2 {
+.page-template-home .quote-well h2 {
 	text-align: left;
+	font-style: italic;
+	line-height: 200%; 
 }
 
-.home .quote-well p {
+.page-template-home .quote-well p {
 	text-align: right;
 	margin-bottom: 0px;
 }
