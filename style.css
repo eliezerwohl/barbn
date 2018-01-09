@@ -27,14 +27,14 @@ h1, h2, h3, h4, h5, p {
 
 .long-line {
 	height: 3px;
-  width: 70%;
+  width: 80%;
   background-color: #e8ebf7;
   display: inline-block;
 }
 
 .short-line {
 	height: 3px;
-  width: 60%;
+  width: 40%;
   background-color: #e8ebf7;
 }
 
@@ -189,12 +189,9 @@ h1.title a:hover {
 /*Home*/
 
 .page-template-home .img-well img {
-	
-/*	min-height: calc(100vh - 131px);*/
 	width: 100%;
-
-    min-height: 600px;
-    object-fit: cover;
+	min-height: 600px;
+   object-fit: cover;
 }
 
 .page-template-home .quote-well {
@@ -209,14 +206,11 @@ h1.title a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
 /*	margin:80px 20px;*/
-
-
 }
 
-#main, .page-template-home .col-sm-6 {
+#main .container-fluid, .page-template-home .col-sm-6 {
 	padding-right: 0px;
-    padding-left: 0px
-
+  padding-left: 0px
 }
 
 .qoute-outer {
@@ -224,18 +218,18 @@ h1.title a:hover {
 }
 
 @media only screen and (min-width : 768px) {
-    .is-table-row {
-        display: table;
-        width: 100%;
-          margin-left:0px;
-    margin-right: 0px;
-    }
-    .is-table-row [class*="col-"] {
-        float: none;
-        display: table-cell;
-        vertical-align: top;
-        padding:0px 0px;
-    }
+  .is-table-row {
+    display: table;
+    width: 100%;
+    margin-left:0px;
+  	margin-right: 0px;
+  }
+  .is-table-row [class*="col-"] {
+      float: none;
+      display: table-cell;
+      vertical-align: top;
+      padding:0px 0px;
+  }
 }
 
 .page-template-home .quote-well h2 {
@@ -244,7 +238,7 @@ h1.title a:hover {
 	line-height: 200%; 
 }
 
-.page-template-home .quote-well p {
+.page-template-home .quote-well h4 {
 	text-align: right;
 	margin-bottom: 0px;
 }
@@ -296,8 +290,6 @@ h1.title a:hover {
 
 
 /*Category */
-
-
 
 footer {
 	border-top: 1px solid #23527c;
