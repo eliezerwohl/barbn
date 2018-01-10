@@ -15,6 +15,9 @@
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /> 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
+    <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/ie.css" />
+<![endif]-->
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >

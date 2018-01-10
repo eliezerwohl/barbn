@@ -157,6 +157,15 @@ h1.title a:hover {
 		font-size: 14px;
 		margin: 25px 0px;
 	}
+	.brand-holder {
+		display: table;
+	}
+	.navbar-brand {
+		display: table-row;
+	}
+	.se {
+		display: table-row;
+	}
 }
 @media(max-width: 767px){
 	.brand-holder {
@@ -180,6 +189,7 @@ h1.title a:hover {
 			opacity:0.7;
 	}
 }
+
 
 .nav-justified>li>a {
 	margin-top: 5px !important;
@@ -252,20 +262,15 @@ h1.title a:hover {
 	font-weight: bold;
 	text-align: center;
 }
+
 @media (min-width: 767px) {
+.page-template-home .container {
+	padding-left:50px;
+	padding-right:50px;
+}
 .page-template-home .quote-well {
-/*	width: fit-content;
-    width: -moz-max-content;
-    width: -webkit-max-content;
-    width: -o-max-content;*/
-   /* display: table;*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-/*	margin:80px 20px;*/
-		}
+	padding:0px 80px;
+}
 	.page-template-home .img-well img {
 		width: 100%;
 		min-height: 600px;
@@ -285,7 +290,7 @@ h1.title a:hover {
   .is-table-row [class*="col-"] {
     float: none;
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
     padding:0px 0px;
   }
 }
@@ -397,5 +402,4 @@ footer .contact-me:hover {
 footer .divider{ 
 	padding: 0px 10px;
 }
-
 
