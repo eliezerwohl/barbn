@@ -264,18 +264,16 @@ h1.title a:hover {
 }
 
 @media (min-width: 767px) {
-.page-template-home .container {
-	padding-left:50px;
-	padding-right:50px;
-}
-.page-template-home .quote-well {
-	padding:0px 80px;
-}
+	.page-template-home .container {
+		padding-left:50px;
+		padding-right:50px;
+	}
+	.page-template-home .quote-well {
+		padding:0px 80px;
+	}
 	.page-template-home .img-well img {
 		width: 100%;
-		min-height: 600px;
-	  object-fit: cover;
-	  height: 100%;
+	  height: auto;
 	}
 	.quote-container .container-fluid, .page-template-home .col-sm-6 {
 		padding-right: 0px;

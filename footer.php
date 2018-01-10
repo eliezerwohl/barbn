@@ -1,9 +1,9 @@
 </div>
 <footer class="text-center">
 	<div class="contact">
-		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
-		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-map-marker" aria-hidden="true"></i> 623 Georges Rd., North Brunswick, NJ 08902</a>
-		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-phone" aria-hidden="true"></i> 	908-698-9164</a>
+		<a class="contact-me" target="_blank" href="mailto:<?php the_field('email','option'); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i> <?php the_field("e-mail", "option"); ?></a>
+		<a class="contact-me" target="_blank" href="<?php the_field("google_map_link", "option"); ?>"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php the_field("address", "option"); ?></a>
+		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i>  	<?php the_field("phone", "option"); ?></a>
 	</div>
 	<div>
 		<span>Copyright <?php echo date("Y"); ?> Barbara L. Nelson.  All rights reserved</span><span class="divider">|</span><span class="footer-item">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span> 
