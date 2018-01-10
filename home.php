@@ -31,7 +31,7 @@
       <?php if( have_rows( 'service_section_link') ){ ?>
       <div>
         <?php $counter = 0; $rowCount=count( get_field( 'service_section_link' ) ); ?>
-        <?php while ( have_rows( 'service_section_link') ) { the_row(); $counter++ ?> <span><a href="<?php echo get_field('service_section_url') . '#' . get_sub_field('hash') ?>"><?php the_sub_field('text'); ?></a>
+        <?php while ( have_rows( 'service_section_link') ) { the_row(); $counter++ ?> <span class="service-section"><a href="<?php echo get_field('service_section_url') . '#' . get_sub_field('hash') ?>"><?php the_sub_field('text'); ?></a>
         <?php if ($counter != $rowCount){ echo "<span class='divider'>|</span>"; }?></span>
         <?php  } ?> </div>
       <?php }; ?> </div>

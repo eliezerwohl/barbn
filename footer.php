@@ -6,7 +6,7 @@
 		<a class="contact-me" target="_blank" href="tel:<?php the_field("phone", "option"); ?>"><i class="fa fa-phone" aria-hidden="true"></i>  	<?php the_field("phone", "option"); ?></a>
 	</div>
 	<div>
-		<span>Copyright <?php echo date("Y"); ?> Barbara L. Nelson.  All rights reserved</span><span class="divider">|</span><span class="footer-item">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span> 
+		<span class="bottom-contact">Copyright <?php echo date("Y"); ?> Barbara L. Nelson.  All rights reserved</span><span class="divider">|</span><span class="bottom-contact">Website by <a target="_blank" href="https://www.eandvdesign.com">E and V Design</a></span> 
 	</div>
 	<?php wp_footer(); ?>
 	</footer>

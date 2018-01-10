@@ -11,6 +11,9 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+img {
+  vertical-align: bottom;
+}
 a {
 	color: #2a0d45;
 }
@@ -307,6 +310,14 @@ h1.title a:hover {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	.page-template-home .sections .service-section {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.page-template-home .divider {
+		display: none;
+	}
 }
 
 
@@ -400,4 +411,15 @@ footer .contact-me:hover {
 footer .divider{ 
 	padding: 0px 10px;
 }
+@media(max-width: 767px){
+	footer .contact-me, footer .bottom-contact {
+		display: inline-block;
+		width: 100%;
+		padding: 10px;
+	}	
+	footer .contact {
+		margin-bottom: 0px;
+	}
+}
+
 
