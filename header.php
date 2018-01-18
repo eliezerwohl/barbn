@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; } ?>
+<html lang="<?php echo $lang; ?>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +16,6 @@
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /> 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
-    <!--[if IE]>
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/ie.css" />
-<![endif]-->
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
@@ -72,3 +70,4 @@
       <!-- /.container-fluid -->
     </nav>
   <div id="main">
+  
