@@ -66,14 +66,6 @@ p {
 	margin-bottom: 50px;
 }
 
-.menu-item {
- 	padding-bottom: 1px;
-}
-
-.dropdown-menu {
-	margin-top: 1px;
-}
-
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
