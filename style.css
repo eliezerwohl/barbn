@@ -1,5 +1,5 @@
 /*Theme Name: Barb N
-Theme URI: 
+Theme URI:
 Author: E and V Design (Elie W. And Vicky K.)
 Author URI: https://eandvdesign.com
 Description: Custom made theme Barb N
@@ -22,6 +22,13 @@ a:hover {
 /*	text-decoration: none;*/
 }
 
+.italic {
+ font-style: italic;;
+}
+
+.bold {
+	font-weight: 800;
+}
 h1, h2, h3, h4, h5 {
 	font-family: 'Lato', sans-serif;
 	color: #474747;
@@ -43,7 +50,16 @@ p {
   width: 80%;
   background-color: #e8ebf7;
   display: inline-block;
-  margin:25px 0px;
+	line-height: 1;
+}
+
+.page-template-home .long-line {
+	margin:25px 0px;
+}
+
+.line-container {
+	text-align: center;
+	line-height: 0;
 }
 
 .short-line {
@@ -51,7 +67,9 @@ p {
   width: 40%;
   background-color: #e8ebf7;
   display: inline-block;
-  margin:50px 0px 25px;
+}
+.page-template-home .short-line {
+	margin:50px 0px 25px;
 }
 
 #main .purple {
@@ -62,7 +80,7 @@ p {
 	color:#e8ebf7;
 }
 
-#main {
+.page-template-home #main {
 	margin-bottom: 50px;
 }
 
@@ -127,7 +145,7 @@ h1.title a:hover {
 /*navbar*/
 
 .navbar-default {
-	border-color: none;
+	border-color: transparent;
 }
 
 .navbar {
@@ -184,13 +202,10 @@ h1.title a:hover {
 			opacity:0.7;
 	}
 }
-
-
 .nav-justified>li>a {
 	margin-top: 5px !important;
 	margin-bottom: 5px !important;
 }
-
 .navbar .translate {
 	position: absolute;
 	right: 30px;
@@ -202,6 +217,7 @@ h1.title a:hover {
 	font-weight: bold;
 	font-size: 10px;
 }
+
 
 /*Home*/
 
@@ -311,15 +327,10 @@ h1.title a:hover {
 		display: none;
 	}
 }
-
-
-
-
-
 .page-template-home .quote-well h2 {
 	text-align: left;
 	font-style: italic;
-	line-height: 200%; 
+	line-height: 200%;
 }
 
 .page-template-home .quote-well h4 {
@@ -327,54 +338,58 @@ h1.title a:hover {
 	margin-bottom: 0px;
 }
 
+.container-main {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 50px;
+}
 
-.page-template-home  #contact-div .btn-holder {
+.container-main h1, .containe-main h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.container-main .primary, .container-main .second {
+	margin-bottom: 50px;
+}
+
+.second .line-container {
+	margin-bottom: 50px;
+}
+
+.btn-holder, .img-holder  {
 	text-align: center;
 }
 
-/*single*/
-
-.single label{
-	display: block
+.bottom {
+	margin-bottom: 25px;
+	text-align: center;
 }
 
-.single textarea{
-	max-width: 100%;
+.bottom .line-container {
+	margin-bottom: 25px;
 }
 
-@media (max-width: 600px){
-	.single textarea, .single input:not([type="submit"]) {
-	width: 100%;
-	}
+/* About Me */
+
+.page-template-about-me .primary .img-holder {
+	margin-bottom: 50px;
 }
-.single input[type="submit"]{
-	  -webkit-appearance: button;
-    background-color: #fff;
-    border:1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border-radius: 4px;
-  }
-  .single input[type="submit"]:hover{
-      color: #333;
-    background-color: #d4d4d4;
-    border-color: #8c8c8c;
-  }
+
+.page-template-about-me .primary  .education {
+	margin-top: 50px;
+}
+.page-template-about-me .primary  .education h2 {
+	text-align: left;
+	margin-bottom: 25px;
+}
+.page-template-about-me .primary  .education p {
+	margin-bottom: 0px;
+}
+
+
+
+
 
 
 /*Category */
@@ -395,12 +410,12 @@ footer .contact {
 
 footer .contact-me {
 	padding:10px 10px;
-}	
+}
 footer .contact-me:hover {
 	color: #23527c;
-}	
+}
 
-footer .divider{ 
+footer .divider{
 	padding: 0px 10px;
 }
 @media(max-width: 767px){
@@ -408,10 +423,8 @@ footer .divider{
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
-	}	
+	}
 	footer .contact {
 		margin-bottom: 0px;
 	}
 }
-
-

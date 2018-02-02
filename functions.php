@@ -1,11 +1,11 @@
-<?php 
-	add_theme_support( 'post-thumbnails' ); 
+<?php
+	add_theme_support( 'post-thumbnails' );
 	if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	}
 function add_jquery() {
     wp_enqueue_script( 'jquery' );
-  }    
+  }
   add_action('init', 'add_jquery');
   require_once('wp-bootstrap-navwalker.php');
 	register_nav_menus( array(
