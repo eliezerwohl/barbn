@@ -69,7 +69,9 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
+    <!-- <?php if ( is_home() ){ ?> -->
     <div class="line-container">
       <div class="long-line"></div>
     </div>
+  <!-- <?php } ?> -->
   <div id="main">
