@@ -356,6 +356,10 @@ h1.title a:hover {
 	font-size: 34px;
 }
 
+.container-main h1 span {
+	font-size: 24px;
+}
+
 .container-main .primary, .container-main .second {
 	margin-bottom: 50px;
 }
@@ -419,9 +423,21 @@ h1.title a:hover {
 	height: auto;
 }
 
+.page-template-confidentiality .exceptions {
+	margin-bottom: 100px;
+}
+
+.page-template-confidentiality .exceptions p {
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+.page-template-confidentiality .exceptions li {
+	margin-bottom: 20px;
+}
 
 
-/*Category */
+
+/*confidentiality */
 
 footer {
 	padding: 20px 15px;
