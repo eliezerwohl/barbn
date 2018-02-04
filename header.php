@@ -19,14 +19,15 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
-    <!-- <?php
+    <?php
       global $post;
-      $direct_parent = $post->post_parent;
-      echo $direct_parent;
-      echo $post->ID;
+      // $direct_parent = $post->post_parent;
+      // echo $direct_parent;
+      $postId = $post->ID;
+      echo $postId;
 
 
-      ?> -->
+      ?>
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -69,9 +70,9 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <!-- <?php if ( is_home() ){ ?> -->
+    <?php if ($postId !== 4 && $postId !== 6){ ?>
     <div class="line-container">
       <div class="long-line"></div>
     </div>
-  <!-- <?php } ?> -->
+  <?php } ?>
   <div id="main">

@@ -410,6 +410,14 @@ h1.title a:hover {
 }
 
 
+/* My Approach */
+.page-template-my-approach .second .btn {
+	margin-bottom: 50px;
+}
+.img-hero {
+	width: 100%;
+	height: auto;
+}
 
 
 
