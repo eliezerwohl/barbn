@@ -452,8 +452,35 @@ h1.title a:hover {
 .page-template-services .img-hero {
 	margin-top: 50px;
 }
+.page-template-contact .primary textarea, .page-template-contact .primary input {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.page-template-contact .primary .btn-holder {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.page-template-contact .primary .btn-holder input {
+	margin-bottom: 0px;
+}
 
+.page-template-contact .map-container {
+	margin-bottom: 100px;
+}
 
+.page-template-contact .map-container .table {
+	display: table;
+	height: 300px;
+}
+.page-template-contact .map-container .txt {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+input[type="submit"] {
+	width: auto !important;
+}
 
 footer {
 	padding: 20px 15px;
