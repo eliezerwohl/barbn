@@ -423,6 +423,7 @@ h1.title a:hover {
 	height: auto;
 }
 
+/*confidentiality */
 .page-template-confidentiality .exceptions {
 	margin-bottom: 100px;
 }
@@ -435,9 +436,24 @@ h1.title a:hover {
 	margin-bottom: 20px;
 }
 
+/* services */
+.page-template-services .container-main ul {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.page-template-services .container-main li {
+	display:inline-block;
+	font-weight: bold;
+}
+.page-template-services .container-main .divider {
+	padding: 0px 15px;
+}
+
+.page-template-services .img-hero {
+	margin-top: 50px;
+}
 
 
-/*confidentiality */
 
 footer {
 	padding: 20px 15px;

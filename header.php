@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <?php if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; } ?>
 <html lang="<?php echo $lang; ?>">
   <head>
@@ -19,10 +20,10 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
+
     <?php
       global $post;
-      // $direct_parent = $post->post_parent;
-      // echo $direct_parent;
+      $direct_parent = $post->post_parent;
       $postId = $post->ID;
       echo $postId;
 
@@ -70,7 +71,7 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <?php if ($postId !== 4 && $postId !== 6){ ?>
+    <?php if ($post->ID !== 4 && $post->ID !== 6){ ?>
     <div class="line-container">
       <div class="long-line"></div>
     </div>
