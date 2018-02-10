@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-
+<?php
+  global $post;
+  $direct_parent = $post->post_parent;
+  // $postId = $post->ID;
+  // echo $postId;
+?>
 <?php if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; } ?>
 <html lang="<?php echo $lang; ?>">
   <head>
@@ -20,15 +25,6 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?> >
-
-    <?php
-      global $post;
-      $direct_parent = $post->post_parent;
-      $postId = $post->ID;
-      echo $postId;
-
-
-      ?>
     <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,21 +36,21 @@
           <span class="icon-bar"></span>
           </button>
           <div class="brand-holder text-center">
-            <a class="navbar-brand" href="<?php echo home_url(); if ($direct_parent == 6 || $post->ID == 6){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
+            <a class="navbar-brand" href="<?php echo home_url(); if ($lang == "es"){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
             <div class="se">Se Habla Español</div>
           </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <a href="<?php the_field("translate-page"); ?>"><span class="translate">
-          <?php if ($direct_parent == 4 || $post->ID == 4){
+          <?php if ($lang == "es"){
             echo "Traducir la pàgina";
             } else {
             echo "Translate page";
             }
             ?>
           </span></a>
-          <?php if ($direct_parent == 4 || $post->ID == 4){
+          <?php if ($lang == "en"){
             $menu = "eng";
             } else { $menu = "esp"; }
               wp_nav_menu( array(

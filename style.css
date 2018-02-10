@@ -170,6 +170,20 @@ h1.title a:hover {
 	background-color: #f5f5f5;
 	color:black;
 }
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: white;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: white;
+}
+#navbar li a:hover {
+	font-style: italic;
+}
+#navbar li:not(.active){
+	opacity: .7;
+}
 @media(min-width: 767px){
 #navbar li a {
 		font-size: 14px;
@@ -507,10 +521,15 @@ footer .divider{
 	padding: 0px 10px;
 }
 @media(max-width: 767px){
+	.page-template-home .sections a {
+		font-size: 20px;
+	}
 	footer .contact-me, footer .bottom-contact {
 		display: inline-block;
 		width: 100%;
 		padding: 10px;
+		padding-bottom: 0px;
+		font-size: 12px;
 	}
 	footer .contact {
 		margin-bottom: 0px;
