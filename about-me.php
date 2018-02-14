@@ -31,7 +31,7 @@
       <div class="short-line"></div>
     </div>
     <p class="warning bold">
-    <?php echo $lang;  if ($lang == "en"){ ?>
+    <?php if (customLang() == "en"){ ?>
         <?php the_field("eng-emergency", "options"); ?>
     <?php } else { ?>
   <?php the_field("esp-emergency", "options"); ?>
