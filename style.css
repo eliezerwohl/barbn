@@ -457,11 +457,11 @@ h1.title a:hover {
 }
 
 /* services */
-.page-template-services .container-main ul {
-	text-align: center;
+.page-template-services .container-main .services {
+	text-align: center !important;
 	margin-bottom: 75px;
 }
-.page-template-services .container-main li {
+.page-template-services .container-main span {
 	display:inline-block;
 	font-weight: bold;
 }

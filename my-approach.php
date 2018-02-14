@@ -12,5 +12,6 @@
     <?php $image = get_field('image'); ?>
     <?php if($image){ ?> <img  class="img-hero" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
     <?php } ?>
+  </div>
 </div>
 <?php get_footer(); ?>
