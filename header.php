@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<?php
-  global $post;
-  $direct_parent = $post->post_parent;
-  // $postId = $post->ID;
-  // echo $postId;
-?>
-<?php if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; } ?>
+<?php $lang = customLang(); ?>
 <html lang="<?php echo $lang; ?>">
   <head>
     <meta charset="utf-8">
@@ -20,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link
     rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php wp_head(); ?>
   </head>

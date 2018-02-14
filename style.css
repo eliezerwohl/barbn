@@ -86,7 +86,7 @@ p {
 }
 
 .page-template-home #main {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .btn:focus,
@@ -179,6 +179,9 @@ h1.title a:hover {
 	background-color: white;
 }
 #navbar li a:hover {
+	text-decoration: underline;
+}
+#navbar li a:active {
 	font-style: italic;
 }
 #navbar li:not(.active){
@@ -288,9 +291,10 @@ h1.title a:hover {
 	margin-bottom: 10px;
 }
 
-.page-template-home .warning {
+.warning {
 	font-weight: bold;
 	text-align: center;
+	color: #b22222;
 }
 
 @media (min-width: 767px) {
@@ -375,7 +379,7 @@ h1.title a:hover {
 }
 
 .container-main .primary, .container-main .second {
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 }
 
 .second .line-container {
@@ -400,7 +404,9 @@ h1.title a:hover {
 .page-template-about-me .primary .img-holder {
 	margin-bottom: 50px;
 }
-
+.page-template-about-me .primary .img-holder img {
+	width: 400px;
+}
 .page-template-about-me .primary  .education {
 	margin-top: 50px;
 }
@@ -439,11 +445,11 @@ h1.title a:hover {
 
 /*confidentiality */
 .page-template-confidentiality .exceptions {
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 }
 
 .page-template-confidentiality .exceptions p {
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	font-weight: bold;
 }
 .page-template-confidentiality .exceptions li {
@@ -453,7 +459,7 @@ h1.title a:hover {
 /* services */
 .page-template-services .container-main ul {
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 }
 .page-template-services .container-main li {
 	display:inline-block;
@@ -463,9 +469,6 @@ h1.title a:hover {
 	padding: 0px 15px;
 }
 
-.page-template-services .img-hero {
-	margin-top: 50px;
-}
 .page-template-contact .primary textarea, .page-template-contact .primary input {
 	width: 100%;
 	margin-bottom: 25px;
