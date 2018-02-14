@@ -1,25 +1,25 @@
 <?php /* Template Name: About Me */ ?>
-<?php get_header(); ?>
+<?php get_header();?>
 <div class="container container-main">
   <div class="primary">
-    <h1>About Me</h1>
+    <h1><?php the_field("about_me_header"); ?></h1>
     <div class="img-holder">
-      <img src="<?php bloginfo('template_url'); ?>/img/headshot-square.jpg">
+      <?php $image = get_field('about_me_img'); ?>
+      <?php if($image){ ?> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
+      <?php } ?>
     </div>
-    <p>I am a bilingual licensed clinical social worker with a private practice in North Brunswick, NJ, who has been in the caring and helping professions in the healthcare arena since 1993. Therapy sessions are conducted in English and Spanish. I specialize in working with individuals who have experienced trauma. My focus in this area is twofold: childhood sexual abuse (victims and nonoffending parents) and eating/weight problems. Just as importantly, I also work with individuals who are experiencing depression, anxiety, grief and loss, family issues, stage of life issues, and sexuality issues.</p>
-    <p>I work with individuals of all ages and stages of life, including children from 6 to 12 years old, preteens from 11 to 13 years old, adolescents/teenagers from 14 to 19 years old, adults 20 years old and older, and older adults 65 and older. My practice is in a central area, close to public transportation.</p>
+    <?php the_field("about_me_text"); ?>
     <div class="education">
-      <h2>Education</h2>
-      <p>Master’s in Social Work from Rutgers School of Social Work, New Brunswick, NJ</p>
-      <p>Bachelor’s in Liberal Arts from Douglass College, Rutgers University, New Brunswick, NJ</p>
+      <h2><?php the_field("education_header"); ?></h2>
+      <?php the_field("education_text"); ?>
     </div>
   </div>
   <div class="second text-center">
     <div class="line-container">
       <div class="short-line"></div>
     </div>
-    <h2>Contact</h2>
-    <p>To schedule an appointment or to obtain further information please fill out the form on my contact page or call me at (908) 698-9164.
+    <h2><?php the_field("contact_header"); ?></h2>
+    <p><?php the_field("contact_text"); ?>
     </p>
     <div class="btn-holder">
       <a href="#" class="btn btn-default">Call</a>
@@ -30,7 +30,12 @@
     <div class="line-container">
       <div class="short-line"></div>
     </div>
-    <p class="warning bold">If you are experiencing an emotional crisis please dial 911 or go to the nearest emergency room.<p>
+    <p class="warning bold">
+    <?php echo $lang;  if ($lang == "en"){ ?>
+        <?php the_field("eng-emergency", "options"); ?>
+    <?php } else { ?>
+  <?php the_field("esp-emergency", "options"); ?>
+    <?php } ?>
   </div>
 </div>
 <?php get_footer(); ?>

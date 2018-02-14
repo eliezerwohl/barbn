@@ -11,9 +11,13 @@ function add_jquery() {
 	register_nav_menus( array(
 	  'primary' => __( 'Primary Menu', 'primary' ),
 	) );
-
-    add_action( 'wp_default_scripts', 'move_jquery_into_footer' );
-
+	add_action( 'wp_default_scripts', 'move_jquery_into_footer' );
+	function customLang() {
+		global $post;
+		$direct_parent = $post->post_parent;
+		if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; }
+		return $lang;
+	 }
 function move_jquery_into_footer( $wp_scripts ) {
 
     if( is_admin() ) {

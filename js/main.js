@@ -1,4 +1,8 @@
 jQuery(document).ready(function($) {
+
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
 	//hover menu
 	// $('.dropdown').mouseenter(function() {
 	// 	if (window.innerWidth > 767){
@@ -28,5 +32,5 @@ jQuery(document).ready(function($) {
  //        mobileFix();
  //    })
 
-    
+
 })
