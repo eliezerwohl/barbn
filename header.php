@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php $lang = customLang(); ?>
-<html lang="<?php echo $lang; ?>">
+<html lang="<?php echo customLang(); ?>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,21 +30,21 @@
           <span class="icon-bar"></span>
           </button>
           <div class="brand-holder text-center">
-            <a class="navbar-brand" href="<?php echo home_url(); if ($lang == "es"){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
+            <a class="navbar-brand" href="<?php echo home_url(); if (customLang() == "es"){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
             <div class="se">Se Habla Español</div>
           </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <a href="<?php the_field("translate-page"); ?>"><span class="translate">
-          <?php if ($lang == "es"){
+          <?php if (customLang() == "en"){
             echo "Traducir la pàgina";
             } else {
             echo "Translate page";
             }
             ?>
           </span></a>
-          <?php if ($lang == "en"){
+          <?php if (customLang() == "en"){
             $menu = "eng";
             } else { $menu = "esp"; }
               wp_nav_menu( array(
