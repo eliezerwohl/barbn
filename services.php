@@ -22,17 +22,17 @@
     <?php $image = get_field('image'); ?>
     <?php if($image){ ?> <img  class="img-hero" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
     <?php } ?>
-    <div class="line-container">
-      <div class="short-line"></div>
-    </div>
 </div>
-
-<div class="warning">
+<div class="bottom">
+  <div class="line-container">
+    <div class="short-line"></div>
+  </div>
+  <p class="warning bold">
   <?php if (lang() == "en"){ ?>
       <?php the_field("eng-emergency", "options"); ?>
   <?php } else { ?>
-<?php the_field("esp-emergency", "options"); ?>
+    <?php the_field("esp-emergency", "options"); ?>
   <?php } ?>
 </div>
-
+</div>
 <?php get_footer(); ?>
