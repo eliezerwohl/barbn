@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker1').datetimepicker({defaultDate: new Date()});
             });
 	//hover menu
 	// $('.dropdown').mouseenter(function() {
