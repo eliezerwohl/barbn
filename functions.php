@@ -12,7 +12,7 @@ function add_jquery() {
 	  'primary' => __( 'Primary Menu', 'primary' ),
 	) );
 	add_action( 'wp_default_scripts', 'move_jquery_into_footer' );
-	function customLang() {
+	function lang() {
 		global $post;
 		$direct_parent = $post->post_parent;
 		if ($direct_parent == 6 || $post->ID == 6){ $lang = "es"; } else {$lang = "en"; }

@@ -1,5 +1,5 @@
 <?php /* Template Name: First Visit*/ ?>
-<?php $lang = customLang(); ?>
+<?php $lang = lang(); ?>
 <?php get_header(); ?>
 <div class="container container-main">
   <div class="primary">
