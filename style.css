@@ -469,6 +469,22 @@ h1.title a:hover {
 	padding: 0px 15px;
 }
 
+.page-template-services .second, .page-template-confidentiality .second  {
+	margin-bottom: 20px;
+}
+
+.page-template-services .second .img-hero, .page-template-confidentiality .second .img-hero {
+	margin-bottom: 50px;
+}
+
+.page-template-services .second  .line-container, .page-template-confidentiality .second  .line-container {
+	margin-bottom: 0px;
+}
+
+.page-template-services .warning, .page-template-confidentiality .warning {
+	margin-bottom: 20px;
+}
+
 .page-template-contact .primary textarea, .page-template-contact .primary input {
 	width: 100%;
 	margin-bottom: 25px;

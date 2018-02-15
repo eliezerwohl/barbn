@@ -15,6 +15,17 @@
   </div>
   <div class="second text-center">
     <img class="img-hero" src="<?php bloginfo('template_url'); ?>/img/michael-browning.jpg">
-</div>
+    <div class="line-container">
+      <div class="short-line"></div>
+    </div>
+  </div>
+
+  <div class="warning">
+  <?php if (lang() == "en"){ ?>
+      <?php the_field("eng-emergency", "options"); ?>
+  <?php } else { ?>
+  <?php the_field("esp-emergency", "options"); ?>
+  <?php } ?>
+  </div>
 
 <?php get_footer(); ?>

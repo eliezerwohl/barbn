@@ -31,10 +31,10 @@
       <div class="short-line"></div>
     </div>
     <p class="warning bold">
-    <?php if (customLang() == "en"){ ?>
+    <?php if (lang() == "en"){ ?>
         <?php the_field("eng-emergency", "options"); ?>
     <?php } else { ?>
-  <?php the_field("esp-emergency", "options"); ?>
+      <?php the_field("esp-emergency", "options"); ?>
     <?php } ?>
   </div>
 </div>

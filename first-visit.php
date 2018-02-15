@@ -9,7 +9,6 @@
     <p>At this point we will review the financial arrangements and I will take your information if you have insurance.</p>
     <p>Following this, I like to go over my privacy and confidentiality policies.</p>
     <p>Then, if we feel we are a good match we can schedule your next appointment(s).</p>
-
   </div>
   <div class="second">
     <div class="line-container">

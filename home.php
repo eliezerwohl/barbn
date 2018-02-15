@@ -74,6 +74,11 @@
     <div class="short-line"></div>
   </div>
   <div class="warning">
-    <?php the_field("warning"); ?> </div>
+    <?php if (lang() == "en"){ ?>
+        <?php the_field("eng-emergency", "options"); ?>
+    <?php } else { ?>
+  <?php the_field("esp-emergency", "options"); ?>
+    <?php } ?>
+  </div>
 </div>
 <?php get_footer(); ?>

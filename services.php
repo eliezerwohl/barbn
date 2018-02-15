@@ -6,7 +6,7 @@
       <h1><?php the_field("services_header"); ?></h1>
       <?php if( have_rows( 'service_section') ){ ?>
         <?php $counter = 0; $rowCount=count( get_field( 'service_section' ) ); ?>
-        <?php while ( have_rows( 'service_section') ) { the_row(); $counter++ ?> <span class="service-section"><?php the_sub_field('text'); ?></a>
+        <?php while ( have_rows( 'service_section') ) { the_row(); $counter++ ?> <span class="service-section"><?php the_sub_field('text'); ?>
         <?php if ($counter != $rowCount){ echo "<span class='divider'>|</span>"; }?></span>
         <?php  } ?>
       <?php }; ?>
@@ -22,6 +22,17 @@
     <?php $image = get_field('image'); ?>
     <?php if($image){ ?> <img  class="img-hero" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
     <?php } ?>
+    <div class="line-container">
+      <div class="short-line"></div>
+    </div>
+</div>
+
+<div class="warning">
+  <?php if (lang() == "en"){ ?>
+      <?php the_field("eng-emergency", "options"); ?>
+  <?php } else { ?>
+<?php the_field("esp-emergency", "options"); ?>
+  <?php } ?>
 </div>
 
 <?php get_footer(); ?>
