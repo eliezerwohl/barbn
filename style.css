@@ -33,6 +33,9 @@ a:hover {
 .bold {
 	font-weight: 800;
 }
+.ajax-loader {
+	display: none !important;
+}
 h1, h2, h3, h4, h5 {
 	font-family: 'Lato', sans-serif;
 	color: #474747;
@@ -481,6 +484,9 @@ h1.title a:hover {
 	margin-bottom: 0px;
 }
 
+/* .page-template-services .warning, .page-template-confidentiality .warning {
+	margin-bottom: 20px;
+} */
 
 .page-template-contact .primary textarea, .page-template-contact .primary input {
 	width: 100%;
@@ -506,6 +512,9 @@ h1.title a:hover {
 	display: table-cell;
 	vertical-align: middle;
 	float: none;
+}
+.page-template-contact .map-container .txt p {
+	text-align: left;
 }
 
 input[type="submit"] {
