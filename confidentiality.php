@@ -2,19 +2,21 @@
 <?php get_header(); ?>
 <div class="container container-main">
   <div class="primary">
-    <h1>Confidentiality <br><span>&Privacy Policies<span></h1>
-    <p>The law protects the relationship between a client and a psychotherapist, and no information may be disclosed to anyone without written permission from the client.</p>
+    <h1><?php the_field("confidentiality_header"); ?><br><span><?php the_field("confidentiality_sub_header"); ?><span></h1>
+    <p><?php the_field("confidentiality_text"); ?></p>
     <div class="exceptions">
-      <p>Exceptions include:</p>
+      <p><?php the_field("confidentiality_list_header"); ?></p>
       <ul>
-        <li>Suspected child abuse, dependent adult, elder abuse for which I am required by law to report to the proper authorities immediately</li>
-        <li>If a client is threatening serious bodily harm to another person(s), I must notify the police and inform the intended victim</li>
-        <li>If a client intends to harm him/herself I will make every effort to enlist their cooperation in ensuring their safety. If the client does not cooperate I will take further measures without their permission, according to law, in order to ensure their safety</li>
+        <?php while ( have_rows( 'list') ) { the_row(); ?>
+          <li><?php the_sub_field('text'); ?></li>
+      <?php }; ?>
       </ul>
     </div>
   </div>
   <div class="second text-center">
-    <img class="img-hero" src="<?php bloginfo('template_url'); ?>/img/michael-browning.jpg">
+    <?php $image = get_field('image'); ?>
+    <?php if($image){ ?> <img  class="img-hero" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
+    <?php } ?>
   </div>
   <div class="bottom">
     <div class="line-container">
