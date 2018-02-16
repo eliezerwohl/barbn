@@ -13,7 +13,7 @@
     <div class="helpful">
       <h2><?php the_field("helpful_forms_header"); ?></h2>
       <?php the_field("helpful_forms_text"); ?>
-      <p class="warning bold"><?php if (lang() == "en"){ ?>
+      <p class="warning italic bold"><?php if (lang() == "en"){ ?>
         <?php the_field("eng-emergency", "options"); ?>
       <?php } else { ?>
         <?php the_field("esp-emergency", "options"); ?>
