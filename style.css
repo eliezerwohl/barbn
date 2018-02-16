@@ -340,8 +340,12 @@ h1.title a:hover {
 	.page-template-home .img-well {
 		text-align: center;
 	}
+	.page-template-home .img-well {
+		max-width: 350px;
+	}
 	.page-template-home .img-well img {
 		max-width: 100%;
+
 	}
 	.page-template-home #about-me {
 		padding-left: 0px;
@@ -361,6 +365,12 @@ h1.title a:hover {
 	text-align: left;
 	font-style: italic;
 	line-height: 200%;
+}
+
+@media(max-width:767px){
+	.page-template-home .quote-well h2 {
+		font-size: 24px;
+	}
 }
 
 .page-template-home .quote-well h4 {
