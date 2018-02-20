@@ -61,9 +61,9 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <?php if ($post->ID !== 4 && $post->ID !== 6){ ?>
+
     <div class="line-container">
       <div class="long-line"></div>
     </div>
-  <?php } ?>
+
   <div id="main">
