@@ -67,7 +67,13 @@
         <?php the_field("contact_me_text"); ?>
         <a target="_blank" href='tel:<?php the_field("phone", "option"); ?>'>
           <?php the_field("phone", "option"); ?> </a>.</p>
-      <div class="btn-holder"> <a class="btn btn-default" href="#">Call</a><a class="btn   btn-default" href="#">Email</a> </div>
+      <div class="btn-holder">
+        <a target="_blank" class="btn btn-default" href='tel:<?php the_field("phone", "option"); ?>'>
+          Call
+        </a>
+        <a target="_blank" class="btn btn-default" href='mailto:<?php the_field("e-mail", "option"); ?>'>Email
+        </a>
+      </div>
     </div>
   </div>
   <div class="text-center col-md-12">

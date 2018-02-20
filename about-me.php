@@ -22,8 +22,10 @@
     <p><?php the_field("contact_text"); ?>
     </p>
     <div class="btn-holder">
-      <a href="#" class="btn btn-default">Call</a>
-      <a href="#" class="btn btn-default">Email</a>
+      <a target="_blank" class="btn btn-default" href='tel:<?php the_field("phone", "option"); ?>'>Call
+      </a>
+      <a target="_blank" class="btn btn-default" href='mailto:<?php the_field("e-mail", "option"); ?>'>Email
+      </a> 
     </div>
   </div>
   <div class="bottom">
