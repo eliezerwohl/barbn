@@ -1,3 +1,3 @@
 # barbn
 
-Code for https://barbaralnelson.com/
+Custom coded wordpress theme.  Can be seen at https://barbaralnelson.com/.
