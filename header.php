@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="<?php echo lang(); ?>">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115459558-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115459558-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +47,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <a href="<?php the_field("translate-page"); ?>"><span class="translate">
           <?php if (lang() == "en"){
-            echo "Traducir la pàgina";
+            echo "Traducir la Páquina";
             } else {
             echo "Translate page";
             }

@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="container container-main">
   <div class="primary">
-    <h1><?php the_field("confidentiality_header"); ?><br><span><?php the_field("confidentiality_sub_header"); ?><span></h1>
+    <h1><?php the_field("confidentiality_header"); ?><br><span><?php the_field("confidentiality_sub_header"); ?></span></h1>
     <p><?php the_field("confidentiality_text"); ?></p>
     <div class="exceptions">
       <p><?php the_field("confidentiality_list_header"); ?></p>

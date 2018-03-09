@@ -1,8 +1,8 @@
-/*Theme Name: Barb N
+/*Theme Name: BarbaraNelson
 Theme URI:
 Author: E and V Design (Elie W. And Vicky K.)
 Author URI: https://eandvdesign.com
-Description: Custom made theme Barb N
+Description: Custom made theme for Barbara Nelson
 Version: 1.0
 */
 
@@ -51,6 +51,10 @@ h2 {
 }
 p {
 	margin-bottom: 20px;
+}
+
+#main {
+	min-height: calc(100vh - 278px);
 }
 
 .long-line {
@@ -573,6 +577,10 @@ h1.title a:hover {
 	margin-bottom: 20px;
 } */
 
+.page-template-contact .response {
+	display: none;
+}
+
 .page-template-contact .primary textarea, .page-template-contact .primary input {
 	width: 100%;
 	margin-bottom: 25px;
@@ -584,6 +592,14 @@ h1.title a:hover {
 
 .page-template-contact form input, .page-template-contact form textarea {
 	padding: 5px 8px;
+}
+
+.page-template-contact .primary .captcha-holder {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.page-template-contact .primary .g-recaptcha {
+	display: inline-block;
 }
 .page-template-contact .primary .btn-holder {
 	text-align: center;

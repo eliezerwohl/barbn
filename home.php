@@ -65,13 +65,22 @@
         <?php the_field("contact_me_title"); ?> </h2>
       <p class="text-center">
         <?php the_field("contact_me_text"); ?>
-        <a target="_blank" href='tel:<?php the_field("phone", "option"); ?>'>
+        <a target="_blank" href='tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>'>
           <?php the_field("phone", "option"); ?> </a>.</p>
       <div class="btn-holder">
-        <a target="_blank" class="btn btn-default" href='tel:<?php the_field("phone", "option"); ?>'>
-          Call
+        <a target="_blank" class="btn btn-default" href='tel:<?php echo str_replace(' ', '', get_field('phone', 'option')); ?>'>
+          <?php if (lang() == "en"){ ?>
+            <?php the_field("call_eng", "options"); ?>
+          <?php } else { ?>
+            <?php the_field("call_esp", "options"); ?>
+          <?php } ?>
         </a>
-        <a target="_blank" class="btn btn-default" href='mailto:<?php the_field("e-mail", "option"); ?>'>Email
+        <a target="_blank" class="btn btn-default" href='mailto:<?php the_field("e-mail", "option"); ?>'>
+          <?php if (lang() == "en"){ ?>
+            <?php the_field("email_eng", "options"); ?>
+          <?php } else { ?>
+            <?php the_field("email_esp", "options"); ?>
+          <?php } ?>
         </a>
       </div>
     </div>
