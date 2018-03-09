@@ -26,14 +26,14 @@
           <?php if (get_sub_field("file")){ ?>
             <a download href="<?php the_sub_field("file"); ?>"><span class="bold"><?php the_sub_field("text"); ?></span></a>
           <?php } else { ?>
-          <p class="italic"><?php the_sub_field("text"); ?></span></p>
+          <p class="italic"><?php the_sub_field("text"); ?></p>
           <?php } ?>
         <?php  } ?>
       <?php }; ?>
     </div>
   </div>
   <div class="bottom">
-    <h4><a href="<?php the_field("questions_link"); ?>"><?php the_field("questions_text"); ?></a><h4>
+    <h4><a href="<?php the_field("questions_link"); ?>"><?php the_field("questions_text"); ?></a></h4>
   </div>
 </div>
 <?php get_footer(); ?>
