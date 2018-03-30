@@ -33,10 +33,11 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <div class="toggle-text">MENU</div>
           </button>
           <div class="brand-holder text-center">
             <a class="navbar-brand" href="<?php echo home_url(); if (lang() == "es"){ echo "/esp"; }?> ">Barbara L. Nelson LCSW</a>
@@ -47,9 +48,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <a href="<?php the_field("translate-page"); ?>"><span class="translate">
           <?php if (lang() == "en"){
-            echo "Traducir la Páquina";
+            the_field("translate-tab-esp", "option");
             } else {
-            echo "Translate page";
+            the_field("translate-tab-eng", "option");
             }
             ?>
           </span></a>
