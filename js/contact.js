@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
   }
   jQuery("#contactSubmit").on("click", function(e) {
     e.preventDefault();
-
     var recaptcha = $(".g-recaptcha-response").val();
     var name = $('[name="name"]').val();
     var telephone = $('[name="telephone"]').val();
@@ -28,31 +27,27 @@ jQuery(document).ready(function($) {
       $(".error").fadeIn()
     }
     else {
-    var url = window.location.origin + "/contact-mail.php"; // the script where you handle the form input.
-    jQuery.ajax({
-      type: "POST",
-      url: url,
-      data: {
-        "g-recaptcha-response": recaptcha,
-        "name": name,
-        "telephone": telephone,
-        "email": email,
-        "date": date,
-        "time": timeFormat(time),
-        "message": message
-      },
-      success: function(data) {
-        if (data == "error"){
+    var data = {
+    action: 'mail_before_submit',
+     "g-recaptcha-response": recaptcha,
+      "name": name,
+      "telephone": telephone,
+      "email": email,
+      "date": date,
+      "time": timeFormat(time),
+      "message": message,
+      _ajax_nonce: $('#my_email_ajax_nonce').data('nonce'),
+      };
+      jQuery.post(window.location.origin + "/wp-admin/admin-ajax.php", data, function(data) {
+      debugger
+      if (data == "error"){
           alert("error")
         }
         else {
           $(".error").hide()
           $(".thank").fadeIn("fast");
         }
-        $(".error").hide()
-        $(".thank").fadeIn("fast");
-      }
-    });
+      });
     }
   });
 });

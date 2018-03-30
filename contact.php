@@ -37,6 +37,7 @@
             <p class="response thank"><?php the_field("sent_message"); ?></p>
           </div>
           <div class="col-md-12 captcha-holder">
+            <span id="my_email_ajax_nonce" data-nonce="<?php echo wp_create_nonce( 'my_email_ajax_nonce' ); ?>"></span>
             <div class="g-recaptcha" data-sitekey="6LdRoksUAAAAAJfj-3sKAHDRc2D4bz9bKpBGice1"></div>
           </div>
           <div class="btn-holder col-md-12">

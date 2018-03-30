@@ -184,16 +184,32 @@ h1.title a:hover {
 	background-color: white;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-toggle {
-	border-color:#e8ebf7;
+	border:0px solid transparent;
 }
+.navbar-default .navbar-toggle {
+	padding-top:4px;
+	padding-bottom:2px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #2a0d45;
+	margin-left: 5px;
+	width: 20px;
 }
 .navbar-default .navbar-toggle:hover {
 	background-color: #2a0d45
 }
 .navbar-default .navbar-toggle:hover .icon-bar {
 	background-color: white;
+}
+
+.navbar-default .navbar-toggle .toggle-text {
+	font-size: 10px;
+	margin-top: 1px;
+}
+
+.navbar-default .navbar-toggle:hover .toggle-text {
+	color: white;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
